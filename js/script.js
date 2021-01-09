@@ -111,6 +111,8 @@ function retry() {
 }
 
 function nullStat() {
+    stat.x = 0;
+    stat.o = 0;
     document.getElementById('sX').innerHTML = 0;
     document.getElementById('sO').innerHTML = 0;
 }
