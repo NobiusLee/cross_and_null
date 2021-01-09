@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>AXIT</title>
+	<title>Cross_and_null</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta http-equiv="Content-type" charset="utf-8" content="text/html" charset=UTF-8" - />
 
@@ -10,13 +10,39 @@
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="content">
+		<div class="tytle">Крестики-нолики</div>
+		<div class="text">Простая игра в крестики-нолики. Победитель всегда ходит первым.</div>
+		<div class="two-line">
 
+			<div class="stat">
+				<div class="title-victory">Количество побед:</div>
+				<div class="bottom-line">
+					<div>Первый игрок: <span id="sX">0</span></div>
+					<div>Второй игрок: <span id="sO">0</span></div>
+				</div>
+			</div>
+			<div class="currentPlayer">
+				<span>Ход <span id="curPlyr">X</span></span>
+			</div>
+		</div>
+
+
+		<div id="area">
+
+		</div>
+
+		<div class="btn-block">
+			<div id="reset-btn">
+				<span>Новый раунд</span>
+			</div>
+			<div id="retry-btn">
+				<span>Сброс</span>
+			</div>
+		</div>
 
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="js/validate.js"></script>
 	<script src="js/script.js"></script>
 
 </body>
