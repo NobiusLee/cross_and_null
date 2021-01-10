@@ -5,6 +5,8 @@ var currentPlayer = document.getElementById('curPlyr');
 var retryBtn = document.getElementById('retry-btn');
 var resetBtn = document.getElementById('reset-btn');
 
+//let winner = "x";
+
 var player = "x";
 var stat = {
     'x': 0,
@@ -76,15 +78,17 @@ function checkWin(data) {
                 win = false
             }
         }
+
         if (win) return true;
     }
+
     return false;
 }
 
 function restart(text) {
 
     alert(text);
-
+    player = player == "x" ? "o" : "x";
     for (var i = 0; i < cell.length; i++) {
         cell[i].innerHTML = '';
     }
